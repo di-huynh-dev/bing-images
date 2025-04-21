@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "43 16 * * *" # 23h45 giờ Việt Nam (UTC+7)
+    - cron: "55 9 * * *" # 23h45 giờ Việt Nam (UTC+7)
 
 jobs:
   bingimages:
