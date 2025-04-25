@@ -27,8 +27,8 @@ jobs:
       - name: Commit
         if: ${{ success() }}
         run: |
-          git config --local user.name "${{ github.actor }}"
-          git config --local user.email "${{ github.actor }}@gmail.com"
+          git config --local user.name "di-huynh-dev"
+          git config --local user.email "dihuynhdev.contact@gmail.com"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}
           git add -A
           git commit --allow-empty -m  "download new image"
